@@ -1,0 +1,3 @@
+PS D:\lex\timelock-project\scripts> node createAccount.js
+Address: 0x5271Aa666d31fD0943E6E95fFF44107d247bC054
+Private Key: 0xad987675f7aee95146036aa0b24d629274da76ba74f4b511c9301046fdcd71c6

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TimeLock dApp</title>
+  <link rel="stylesheet" href="styles.css">
+
+   <!-- 外部 JS 庫 -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.4/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+
+</head>
+<body>
+  <h1>⏳ TimeLock Encryption dApp</h1>
+
+  <p><strong>Account:</strong> <span id="account"></span></p>
+  <p><strong id="tokenBalance">Loading balance...</strong></p>
+
+  <div>
+    <h2>Approve Token</h2>
+    <button onclick="approveToken()">Approve 1 ETH</button>
+  </div>
+
+  <div>
+    <h2>Lock Message</h2>
+    <input id="message" placeholder="Enter message">
+    <input id="lockDuration" type="number" placeholder="Lock duration (seconds)">
+    <button onclick="lockMessage()">Lock</button>
+  </div>
+
+  <div>
+    <h2>Unlock Message</h2>
+    <input id="messageId" type="number" placeholder="Message ID">
+    <button onclick="unlockMessage()">Unlock</button>
+    <p id="decryptedMessage"></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.4/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
